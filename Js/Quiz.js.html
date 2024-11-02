@@ -1,77 +1,113 @@
 <!doctype html>
-<!-- saved from url=(0063)https://anjana.dev/javascript-first-steps/2-jsquiz-starter.html -->
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-    <title>Quiz.js</title>
-    <style>
-      body {
-        margin: 1rem auto;
-        padding: 3rem;
-        font-family: sans-serif;
-      }
-      header {
-        width: 50%;
-        margin: 1em auto;
-      }
-      main {
-        min-width: 25rem;
-        max-width: 50%;
-        margin: 0px auto;
-        display: flex;
-        flex-direction: column;
-      }
-      #statement {
-        border: 1px solid black;
-        border-radius: 0.5rem;
-        box-shadow: 5px 5px 5px gray;
-        padding: 1rem;
-        font-size: x-large;
-        text-align: center;
-        margin: 1rem 0px;
-        min-height: 2em;
-      }
-      #explanation {
-        padding: 1rem;
-        text-align: center;
-      }
-      #options {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-      button {
-        padding: 0.5rem;
-        font-size: medium;
-        border-radius: 5px;
-      }
-      .correct {
-        background-color: lightgreen;
-      }
-      .incorrect {
-        background-color: lightpink;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Playground</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>Quiz.js</h1>
-      <p>Do you know JS? Find out!</p>
+    <header class="header-section" id="header-id">
+      <div>
+        <h1>I am Header</h1>
+      </div>
     </header>
 
-    <main>
-      <div id="statement"></div>
+    <nav class="nav-section" id="nav-id">
+      <ul>
+        <li><a href="#section1" class="nav-link" id="link1">Section 1</a></li>
+        <li><a href="#section2" class="nav-link" id="link2">Section 2</a></li>
+        <li><a href="#section3" class="nav-link" id="link3">Section 3</a></li>
+      </ul>
+    </nav>
 
-      <div id="options">
-        <button name="true" value="true">true</button>
-        <button name="false" value="false">false</button>
-      </div>
+    <main class="main-section" id="main-id">
+      <section class="section" id="section1">
+        <h2>Section 1</h2>
+        <p class="paragraph" id="para1">This is a paragraph in section 1.</p>
+        <img src="" alt="Image 1" class="image" id="image1" />
+      </section>
 
-      <div id="explanation"></div>
+      <section class="section" id="section2">
+        <h2>Section 2</h2>
+        <p class="paragraph" id="para2">This is a paragraph in section 2.</p>
+        <img src="image2.jpg" alt="Image 2" class="image" id="image2" />
+      </section>
+
+      <section class="section" id="section3">
+        <h2>Section 3</h2>
+        <p class="paragraph" id="para3">This is a paragraph in section 3.</p>
+        <img src="image3.jpg" alt="Image 3" class="image" id="image3" />
+      </section>
     </main>
 
-    <script type="text/javascript"></script>
+    <footer class="footer-section" id="footer-id">
+      <p class="footer-text" id="footer-text">I am Footer</p>
+    </footer>
+
+    <form class="form-section" id="form-id">
+      <label for="input-text" class="label" id="label-text">Text Input:</label>
+      <input type="text" id="input-text" class="input" value="Sample Text" />
+
+      <label for="input-password" class="label" id="label-password"
+        >Password Input:</label
+      >
+      <input
+        type="password"
+        id="input-password"
+        class="input"
+        value="password"
+      />
+
+      <label for="input-email" class="label" id="label-email"
+        >Email Input:</label
+      >
+      <input
+        type="email"
+        id="input-email"
+        class="input"
+        value="example@example.com"
+      />
+
+      <label for="input-number" class="label" id="label-number"
+        >Number Input:</label
+      >
+      <input type="number" id="input-number" class="input" value="123" />
+
+      <label for="input-date" class="label" id="label-date">Date Input:</label>
+      <input type="date" id="input-date" class="input" value="2023-01-01" />
+
+      <label for="input-color" class="label" id="label-color"
+        >Color Input:</label
+      >
+      <input type="color" id="input-color" class="input" value="#ff0000" />
+
+      <label for="textarea" class="label" id="label-textarea">Textarea:</label>
+      <textarea id="textarea" class="textarea">Sample Text</textarea>
+
+      <label for="select" class="label" id="label-select">Select:</label>
+      <select id="select" class="select">
+        <option value="option1" class="option" id="option1">Option 1</option>
+        <option value="option2" class="option" id="option2">Option 2</option>
+        <option value="option3" class="option" id="option3">Option 3</option>
+      </select>
+
+      <label for="checkbox" class="label" id="label-checkbox">Checkbox:</label>
+      <input type="checkbox" id="checkbox" class="checkbox" checked />
+
+      <label for="radio1" class="label" id="label-radio1">Radio 1:</label>
+      <input
+        type="radio"
+        id="radio1"
+        name="radio-group"
+        class="radio"
+        checked
+      />
+
+      <label for="radio2" class="label" id="label-radio2">Radio 2:</label>
+      <input type="radio" id="radio2" name="radio-group" class="radio" />
+
+      <button type="submit" class="button" id="submit-button">Submit</button>
+    </form>
   </body>
 </html>
-
